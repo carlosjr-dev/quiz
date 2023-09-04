@@ -1,15 +1,11 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Ask from "./pages/ask/Ask";
-
-const App: React.FC = () => {
+import { Outlet } from "react-router-dom";
+import "./App.css";
+function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Ask />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Outlet />
+    </div>
   );
-};
+}
 
 export default App;
