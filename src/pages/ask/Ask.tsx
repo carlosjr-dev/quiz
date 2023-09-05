@@ -26,6 +26,7 @@ export default function Ask() {
     setQuestNumber(questNumber + 1);
     setIdQuestion(idQuestion + 1);
   };
+
   const handleClickBtn = () => {
     const trueId = filteredQuest?.correctAnswer;
     if (trueId === selectedOption) {
@@ -38,12 +39,11 @@ export default function Ask() {
     } else if (selectedOption === null) {
       alert("selecione alguma coisa");
       setQuestNumber(questNumber);
-      setNumber(number + 1);
-      setCounterQuest(counterQuest + 1);
     } else {
       handlePercent();
       setFalseQuest(falseQuest + 1);
-      console.log(selectedOption);
+
+      setIdQuestion(idQuestion + 1);
       setQuestNumber(questNumber + 1);
       setNumber(number + 1);
       setCounterQuest(counterQuest + 1);
