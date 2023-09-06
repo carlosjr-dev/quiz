@@ -4,145 +4,79 @@
   box-sizing: border-box;
   font-family: "PT Sans Narrow", sans-serif;
 }
-.content-quiz {
-  background: #fff;
-  height: 100vh;
-}
-.container-title {
-  color: #464646;
-  font-family: PT Sans Narrow;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.container-timer {
-  color: #464646;
-  font-family: PT Sans Narrow;
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-left: 400px;
-}
-.container-questnumber {
-  color: #464646;
-  font-family: PT Sans Narrow;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+@media screen and (min-width: 768px) {
+  .content-quiz {
+    background: #fff;
+    height: 100vh;
+  }
+  .container-title {
+    color: #464646;
+    font-family: PT Sans Narrow;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container-timer {
+    color: #464646;
+    font-family: PT Sans Narrow;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 400px;
+  }
+  .container-questnumber {
+    color: #464646;
+    font-family: PT Sans Narrow;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+  }
 
-  justify-content: center;
-  display: flex;
+  .btn-quit {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #979797;
+    background: #404040;
+    width: 136px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Liberation Sans Narrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-  margin-top: 30px;
-}
+  .btn-quit:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #fb0000;
+    background: #6f1111b1;
+    width: 136px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Liberation Sans Narrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-.btn-quit {
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid #979797;
-  background: #404040;
-  width: 136px;
-  height: 42px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Liberation Sans Narrow;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.btn-quit:hover {
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid #fb0000;
-  background: #6f1111b1;
-  width: 136px;
-  height: 42px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Liberation Sans Narrow;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.btn-confirm {
-  margin-left: 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid #016827a0;
-  flex-shrink: 0;
-
-  background: linear-gradient(
-    272deg,
-    #3ea267 4.19%,
-    #269052 24.57%,
-    #32a261 43.44%,
-    #31c16d 66.47%,
-    #65ee9e 83.69%,
-    #04ff6c 101.87%
-  );
-
-  width: 208px;
-  height: 42px;
-  flex-shrink: 0;
-  color: #fff;
-  font-family: Liberation Sans Narrow;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-h1 {
-  color: #464646;
-  font-family: PT Sans Narrow;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-align: center;
-  margin-top: 14px;
-}
-nav {
-  width: 480px;
-  height: 44px;
-  border-radius: 4px;
-  background: #404040;
-  margin-top: 16px;
-  font-family: "PT Sans Narrow";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  color: #fff;
-}
-nav input {
-  display: none;
-}
-nav label {
-  padding: 10px 16px;
-
-  cursor: pointer;
-  transition: all 0.3s;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  border-radius: 4px;
-}
-nav label:last-of-type {
-  border-right: 0;
-}
-nav input:checked + label {
-  border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(
+  .btn-confirm {
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #016827a0;
+    flex-shrink: 0;
+    background: linear-gradient(
       272deg,
       #3ea267 4.19%,
       #269052 24.57%,
@@ -150,122 +84,445 @@ nav input:checked + label {
       #31c16d 66.47%,
       #65ee9e 83.69%,
       #04ff6c 101.87%
-    )
-    1;
+    );
 
-  text-align: center;
-  background: #31c16d27;
-  width: 100%;
-  justify-content: center;
-}
-.container-header {
-  display: flex;
-  justify-content: space-between;
-}
-.content-btn {
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 30px;
-  padding-left: 136px;
-}
-.end-stage {
-  height: 100vh;
-  margin: 0 auto;
-  text-align: center;
-}
-.end-green {
-  height: 50vh;
-  background-color: #badcb4;
-}
-.end-red {
-  height: 50vh;
-  background-color: #dcb4b4;
-}
-.truequest {
-  background: linear-gradient(
-    272deg,
-    #3ea267 4.19%,
-    #269052 24.57%,
-    #32a261 43.44%,
-    #31c16d 66.47%,
-    #65ee9e 83.69%,
-    #04ff6c 101.87%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Inter;
-  font-size: 250px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.falsequest {
-  background: linear-gradient(
-    272deg,
-    #a23e3e 4.19%,
-    #902626 24.57%,
-    #a23232 43.44%,
-    #c13131 66.47%,
-    #ee6565 83.69%,
-    #ff0404 101.87%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Inter;
-  font-size: 250px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    width: 208px;
+    height: 42px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Liberation Sans Narrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .title--quest {
+    color: #464646;
+    font-family: PT Sans Narrow;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 14px;
+  }
+  nav {
+    width: 480px;
+    height: 44px;
+    border-radius: 4px;
+    background: #404040;
+    margin-top: 16px;
+    font-family: "PT Sans Narrow";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    color: #fff;
+  }
+  nav input {
+    display: none;
+  }
+  nav label {
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  nav label:last-of-type {
+    border-right: 0;
+  }
+  nav input:checked + label {
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(
+        272deg,
+        #3ea267 4.19%,
+        #269052 24.57%,
+        #32a261 43.44%,
+        #31c16d 66.47%,
+        #65ee9e 83.69%,
+        #04ff6c 101.87%
+      )
+      1;
+
+    text-align: center;
+    background: #31c16d27;
+    width: 100%;
+    justify-content: center;
+  }
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-btn {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-left: 136px;
+  }
+  .end-stage {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .end-green {
+    height: 50vh;
+    background-color: #badcb4;
+  }
+  .end-red {
+    height: 50vh;
+    background-color: #dcb4b4;
+  }
+  .truequest {
+    padding-top: 160px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .falsequest {
+    background: linear-gradient(
+      272deg,
+      #a23e3e 4.19%,
+      #902626 24.57%,
+      #a23232 43.44%,
+      #c13131 66.47%,
+      #ee6565 83.69%,
+      #ff0404 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 250px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .text-error {
+    padding-top: 0px;
+    background: linear-gradient(
+      272deg,
+      #a23e3e 4.19%,
+      #902626 24.57%,
+      #a23232 43.44%,
+      #c13131 66.47%,
+      #ee6565 83.69%,
+      #ff0404 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .text-true {
+    margin-top: -50px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .text-game {
+    padding-top: 30px;
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 }
 
-.text-error {
-  background: linear-gradient(
-    272deg,
-    #a23e3e 4.19%,
-    #902626 24.57%,
-    #a23232 43.44%,
-    #c13131 66.47%,
-    #ee6565 83.69%,
-    #ff0404 101.87%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Inter;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.text-true {
-  background: linear-gradient(
-    272deg,
-    #3ea267 4.19%,
-    #269052 24.57%,
-    #32a261 43.44%,
-    #31c16d 66.47%,
-    #65ee9e 83.69%,
-    #04ff6c 101.87%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: Inter;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.text-game {
-  color: #000;
-  font-family: Inter;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+@media screen and (max-width: 767px) {
+  .text-game {
+    color: #000;
+    font-family: Inter;
+    font-size: 2rem;
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .end-stage {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .end-green {
+    height: 50vh;
+    background-color: #badcb4;
+  }
+  .end-red {
+    height: 50vh;
+    background-color: #dcb4b4;
+  }
+  .truequest {
+    margin-top: 180px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 13rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .falsequest {
+    background: linear-gradient(
+      272deg,
+      #a23e3e 4.19%,
+      #902626 24.57%,
+      #a23232 43.44%,
+      #c13131 66.47%,
+      #ee6565 83.69%,
+      #ff0404 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 13rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .text-error {
+    background: linear-gradient(
+      272deg,
+      #a23e3e 4.19%,
+      #902626 24.57%,
+      #a23232 43.44%,
+      #c13131 66.47%,
+      #ee6565 83.69%,
+      #ff0404 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .text-true {
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+
+    line-height: normal;
+  }
+  .btn-quit {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #979797;
+    background: #404040;
+    width: 115px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Liberation Sans Narrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .btn-quit:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #fb0000;
+    background: #6f1111b1;
+    padding: 0px 5px 0px 5px;
+    width: 115px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Liberation Sans Narrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .btn-confirm {
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #016827a0;
+    flex-shrink: 0;
+
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+
+    width: 115px;
+    height: 50px;
+    flex-shrink: 0;
+    color: #fff;
+    font-family: Liberation Sans Narrow;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content-quiz {
+    background: #fff;
+    height: 100vh;
+  }
+  .container-title {
+    color: #464646;
+    font-family: PT Sans Narrow;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .container-questnumber {
+    color: #464646;
+    font-family: PT Sans Narrow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+  }
+  .title--quest {
+    font-family: PT Sans Narrow;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  nav {
+    width: 250px;
+    height: 44px;
+    border-radius: 4px;
+    background: #404040;
+    margin-top: 16px;
+    font-family: "PT Sans Narrow";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    color: #fff;
+  }
+  nav input {
+    display: none;
+  }
+  nav label {
+    padding: 10px 16px;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  nav label:last-of-type {
+    border-right: 0;
+  }
+  nav input:checked + label {
+    border-radius: 4px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(
+        272deg,
+        #3ea267 4.19%,
+        #269052 24.57%,
+        #32a261 43.44%,
+        #31c16d 66.47%,
+        #65ee9e 83.69%,
+        #04ff6c 101.87%
+      )
+      1;
+
+    text-align: center;
+    background: #31c16d27;
+    width: 100%;
+    justify-content: center;
+  }
+  .content-btn {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 250px;
+    display: flex;
+    margin-top: 30px;
+  }
 }

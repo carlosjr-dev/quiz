@@ -1,108 +1,208 @@
-h1 {
-  color: #171515;
-  font-family: Inter;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.containet-text {
-  padding-top: 50px;
-  margin: 0 auto;
-  width: 1301px;
+@media screen and (min-width: 768px) {
+  .home-tittle {
+    padding-top: 10px;
+    color: #171515;
+    font-family: Inter;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .containet-text {
+    margin: 0 auto;
+    padding: 15px 20px 0px 20px;
+    width: auto;
+    flex-shrink: 0;
+    color: #171515;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  h2 {
+    padding-bottom: 35px;
+    padding-top: 25px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container--btn {
+    display: flex;
+    justify-content: space-around;
+    width: 272px;
+    height: 86px;
+    border-radius: 50px;
+    background: #4d4d4d;
+    padding-top: 7px;
+    margin: 0 auto;
+  }
+  .container--ring {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    padding-top: 10px;
+  }
 
-  flex-shrink: 0;
-  color: #171515;
-  text-align: justify;
-  font-family: Inter;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
+  .btn-text {
+    text-decoration: none;
+    color: #fff;
+    text-align: justify;
+    text-shadow: 0px 1px 1px #171515;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+  }
+  .btn-text:hover {
+    text-decoration: none;
+    color: #646262ef;
+    text-align: justify;
+    text-shadow: 0px 1px 1px #171515;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+  }
+  .btn--black {
+    width: 153px;
+    height: 71px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    padding-top: 17px;
+  }
 }
-h2 {
-  padding-bottom: 35px;
-  padding-top: 25px;
-  background: linear-gradient(
-    272deg,
-    #3ea267 4.19%,
-    #269052 24.57%,
-    #32a261 43.44%,
-    #31c16d 66.47%,
-    #65ee9e 83.69%,
-    #04ff6c 101.87%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-family: Inter;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.container--btn {
-  display: flex;
-  justify-content: space-around;
-  width: 272px;
-  height: 86px;
-  border-radius: 50px;
-  background: #4d4d4d;
-  padding-top: 7px;
-  margin: 0 auto;
-}
-.container--ring {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  padding-top: 10px;
-}
+@media screen and (max-width: 767px) {
+  .home-tittle {
+    color: #171515;
+    font-family: Inter;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .containet-text {
+    margin: 0 auto;
+    width: auto;
+    padding: 30px 10px 0px 10px;
+    flex-shrink: 0;
+    color: #171515;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  h2 {
+    padding-bottom: 35px;
+    padding-top: 25px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container--btn {
+    display: flex;
+    justify-content: space-around;
+    width: 272px;
+    height: 86px;
+    border-radius: 50px;
+    background: #4d4d4d;
+    padding-top: 7px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .container--ring {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    padding-top: 10px;
+  }
 
-.btn-text {
-  text-decoration: none;
-  color: #fff;
-  text-align: justify;
-  text-shadow: 0px 1px 1px #171515;
-  font-family: Inter;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding-left: 40px;
-}
-.btn-text:hover {
-  text-decoration: none;
-  color: #646262ef;
-  text-align: justify;
-  text-shadow: 0px 1px 1px #171515;
-  font-family: Inter;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding-left: 40px;
-}
-.btn--black {
-  width: 153px;
-  height: 71px;
-  flex-shrink: 0;
-  border-radius: 50px;
-  background: linear-gradient(
-    272deg,
-    #3ea267 4.19%,
-    #269052 24.57%,
-    #32a261 43.44%,
-    #31c16d 66.47%,
-    #65ee9e 83.69%,
-    #04ff6c 101.87%
-  );
-  padding-top: 17px;
-}
-
-.container-homepage {
-  background-image: url(/il_fullxfull\ 1.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  height: 100vh;
+  .btn-text {
+    text-decoration: none;
+    color: #fff;
+    text-align: justify;
+    text-shadow: 0px 1px 1px #171515;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+  }
+  .btn-text:hover {
+    text-decoration: none;
+    color: #646262ef;
+    text-align: justify;
+    text-shadow: 0px 1px 1px #171515;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 40px;
+  }
+  .btn--black {
+    width: 153px;
+    height: 71px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: linear-gradient(
+      272deg,
+      #3ea267 4.19%,
+      #269052 24.57%,
+      #32a261 43.44%,
+      #31c16d 66.47%,
+      #65ee9e 83.69%,
+      #04ff6c 101.87%
+    );
+    padding-top: 17px;
+  }
 }

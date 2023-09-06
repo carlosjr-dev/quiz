@@ -90,7 +90,7 @@ export default function Ask() {
                     Questão {questNumber}
                   </span>
 
-                  <h1>{filteredQuest.question}</h1>
+                  <p className="title--quest">{filteredQuest.question}</p>
                   {filteredQuest.options.map(
                     (option: string, index: number) => (
                       <nav key={index}>
