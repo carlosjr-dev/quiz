@@ -12,7 +12,7 @@ export default function Ask() {
   const [questNumber, setQuestNumber] = useState<number>(1);
   const [trueQuest, setTrueQuest] = useState<number>(0);
   const [falseQuest, setFalseQuest] = useState<number>(0);
-
+  const [endGame, setEndGame] = useState<boolean>(true);
   const totalQuestions = questions.length;
 
   const filteredQuest = questions.find((item) => item.id === idQuestion);
@@ -23,8 +23,18 @@ export default function Ask() {
   };
 
   const handleClickBtnLeave = () => {
+    handlePercent();
     setQuestNumber(questNumber + 1);
     setIdQuestion(idQuestion + 1);
+    verifyEndgame();
+  };
+  const verifyEndgame = () => {
+    if (questNumber === 14) {
+      console.log("foi");
+      setEndGame(false);
+    } else {
+      console.log("nao");
+    }
   };
 
   const handleClickBtn = () => {
@@ -36,9 +46,11 @@ export default function Ask() {
       setQuestNumber(questNumber + 1);
       setNumber(number + 1);
       setCounterQuest(counterQuest + 1);
+      verifyEndgame();
     } else if (selectedOption === null) {
       alert("selecione alguma coisa");
       setQuestNumber(questNumber);
+      verifyEndgame();
     } else {
       handlePercent();
       setFalseQuest(falseQuest + 1);
@@ -47,6 +59,7 @@ export default function Ask() {
       setQuestNumber(questNumber + 1);
       setNumber(number + 1);
       setCounterQuest(counterQuest + 1);
+      verifyEndgame();
     }
 
     //
@@ -58,50 +71,72 @@ export default function Ask() {
 
   return (
     <>
-      <div className="content-quiz">
-        <Progressbar percent={percent}></Progressbar>
-        {filteredQuest && (
-          <div className="radio-section">
-            <ul>
-              <li>
-                <div className="container-header">
-                  <p className="heade-text">
-                    <span className="container-title">
-                      Questão {questNumber} de {totalQuestions} LOTR Quiz
-                    </span>
-                    <span className="container-timer"></span>
-                  </p>
-                </div>
-                <span className="container-questnumber">
-                  Questão {questNumber}
-                </span>
+      {endGame ? (
+        <div className="content-quiz">
+          <Progressbar percent={percent}></Progressbar>
+          {filteredQuest && (
+            <div className="radio-section">
+              <ul>
+                <li>
+                  <div className="container-header">
+                    <p className="heade-text">
+                      <span className="container-title">
+                        Questão {questNumber} de {totalQuestions} LOTR Quiz
+                      </span>
+                      <span className="container-timer"></span>
+                    </p>
+                  </div>
+                  <span className="container-questnumber">
+                    Questão {questNumber}
+                  </span>
 
-                <h1>{filteredQuest.question}</h1>
-                {filteredQuest.options.map((option: string, index: number) => (
-                  <nav key={index}>
-                    <input
-                      type="radio"
-                      id={`option${index}`}
-                      name={`opcao${filteredQuest.id}`}
-                      checked={selectedOption === index}
-                      onChange={() => setSelectedOption(index)}
-                    />
-                    <label htmlFor={`option${index}`}>{option}</label>
-                  </nav>
-                ))}
-                <div className="content-btn">
-                  <button className="btn-quit" onClick={handleClickBtnLeave}>
-                    Desistir
-                  </button>
-                  <button className="btn-confirm" onClick={handleClickBtn}>
-                    Confirmar
-                  </button>
-                </div>
-              </li>
-            </ul>
+                  <h1>{filteredQuest.question}</h1>
+                  {filteredQuest.options.map(
+                    (option: string, index: number) => (
+                      <nav key={index}>
+                        <input
+                          type="radio"
+                          id={`option${index}`}
+                          name={`opcao${filteredQuest.id}`}
+                          checked={selectedOption === index}
+                          onChange={() => setSelectedOption(index)}
+                        />
+                        <label htmlFor={`option${index}`}>{option}</label>
+                      </nav>
+                    )
+                  )}
+                  <div className="content-btn">
+                    <button className="btn-quit" onClick={handleClickBtnLeave}>
+                      Desistir
+                    </button>
+                    <button className="btn-confirm" onClick={handleClickBtn}>
+                      Confirmar
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="end-stage">
+          <div className="end-green">
+            <p className="text-game">
+              Agradecemos por participar do quiz de O Senhor dos Anéis.
+            </p>
+            <p className="truequest">{trueQuest}</p>
+            <p className="text-true">Acertos</p>
           </div>
-        )}
-      </div>
+          <div className="end-red">
+            <p className="text-error">Erros</p>
+            <p className="falsequest">{falseQuest}</p>
+
+            <p className="text-game">
+              Parabéns pelo seu conhecimento e obrigado por se juntar a nós!
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 }

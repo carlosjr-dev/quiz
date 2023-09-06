@@ -5,7 +5,7 @@
   font-family: "PT Sans Narrow", sans-serif;
 }
 .content-quiz {
-  background: #d6d6d6;
+  background: #fff;
   height: 100vh;
 }
 .container-title {
@@ -170,4 +170,102 @@ nav input:checked + label {
   margin: 0 auto;
   margin-top: 30px;
   padding-left: 136px;
+}
+.end-stage {
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+.end-green {
+  height: 50vh;
+  background-color: #badcb4;
+}
+.end-red {
+  height: 50vh;
+  background-color: #dcb4b4;
+}
+.truequest {
+  background: linear-gradient(
+    272deg,
+    #3ea267 4.19%,
+    #269052 24.57%,
+    #32a261 43.44%,
+    #31c16d 66.47%,
+    #65ee9e 83.69%,
+    #04ff6c 101.87%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.falsequest {
+  background: linear-gradient(
+    272deg,
+    #a23e3e 4.19%,
+    #902626 24.57%,
+    #a23232 43.44%,
+    #c13131 66.47%,
+    #ee6565 83.69%,
+    #ff0404 101.87%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-error {
+  background: linear-gradient(
+    272deg,
+    #a23e3e 4.19%,
+    #902626 24.57%,
+    #a23232 43.44%,
+    #c13131 66.47%,
+    #ee6565 83.69%,
+    #ff0404 101.87%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-true {
+  background: linear-gradient(
+    272deg,
+    #3ea267 4.19%,
+    #269052 24.57%,
+    #32a261 43.44%,
+    #31c16d 66.47%,
+    #65ee9e 83.69%,
+    #04ff6c 101.87%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text-game {
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
